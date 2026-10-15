@@ -342,9 +342,9 @@ const CATS = { outer: "Куртки", hoodie: "Худи", top: "Верх", cargo
     gsap.set(".item", { opacity: 0 });
 
     // Контакты
-    gsap.from(".contact", {
-      y: 30, opacity: 0, duration: 1, stagger: 0.08, ease: "power3.out",
-      scrollTrigger: { trigger: ".contacts__grid", start: "top 95%" },
+    gsap.from(".contacts__mail", {
+      y: 30, opacity: 0, duration: 1, stagger: 0.1, ease: "power3.out",
+      scrollTrigger: { trigger: ".contacts__links", start: "top 95%" },
     });
   }
 
