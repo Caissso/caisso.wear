@@ -410,7 +410,9 @@ ul { list-style: none; }
   display: flex; justify-content: space-between; align-items: center; gap: 24px;
   padding: 28px 0; border-top: 1px solid var(--line);
 }
-.footer__logo { font-size: clamp(28px, 3vw, 44px); font-weight: 900; letter-spacing: -0.06em; }
+.footer__logo { display: flex; align-items: center; gap: clamp(12px, 1.4vw, 20px); font-size: clamp(26px, 3vw, 44px); font-weight: 900; letter-spacing: -0.05em; line-height: 1; }
+.footer__mark { width: auto; height: 1.15em; transition: transform 0.6s var(--ease); }
+.footer__logo:hover .footer__mark { transform: translateX(-3px) skewX(-8deg); }
 .footer__social { display: flex; flex-wrap: wrap; gap: 8px 32px; }
 .footer__social a { font-size: 13px; font-weight: 600; }
 .footer__social span { color: var(--muted); font-weight: 500; margin-left: 4px; transition: color 0.3s; }
